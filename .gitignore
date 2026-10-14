@@ -1,0 +1,17 @@
+# Downloaded dataset and extracted source images
+data/
+
+# Python and notebook runtime files
+__pycache__/
+*.py[cod]
+.venv/
+.ipynb_checkpoints/
+
+# Streamlit secrets must never be committed
+.streamlit/secrets.toml
+
+# Keep only the artifacts required to run the UI and inspect its evaluation
+outputs/*
+!outputs/image_analysis.csv
+!outputs/model_comparison.csv
+!outputs/mobilenetv2___transfer_and_augmentation.keras
